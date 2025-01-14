@@ -100,7 +100,6 @@ const DataTable = () => {
         <tbody>
           {data.map((row, index) => (
             <tr key={index}>
-              {/* Serial Number Column */}
               {columns.map((col) => {
                 const value = row[col.key];
                 const isBlurry = value === "Loading data, Please wait";
@@ -124,9 +123,12 @@ const DataTable = () => {
                 return (
                   <td
                     key={col.key}
-                    style={
-                      isBlurry ? { filter: "blur(.5px)", color: "#999" } : {}
-                    }
+                    style={{
+                      ...(isBlurry ? { filter: "blur(.5px)", color: "#999" } : {}),
+                      ...(value === "Cell data size exceeds limit"
+                        ? { color: "red", fontWeight: "bold" }
+                        : {}),
+                    }}
                   >
                     {col.key === "action" && isBlurry && (
                       <RiLoader2Fill
