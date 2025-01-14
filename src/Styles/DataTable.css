@@ -1,0 +1,37 @@
+.data-table{
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.data-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.data-table .add-row {
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  color: #4CAF50;
+  background-color: #f9f9f9;
+}
+
+.data-table a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.data-table a:hover {
+  text-decoration: underline;
+}

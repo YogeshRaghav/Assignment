@@ -1,0 +1,72 @@
+/* Styling for the Header */
+.header {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  margin-top: 48px; 
+  margin-left: 48px; 
+  width: calc(100% - 60px); 
+  gap: 50px; 
+}
+
+.header-search {
+  width: 200px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 5px;
+}
+
+.row{
+  margin-top: 1px;
+  gap: 2.5px;
+}
+
+
+.filter{
+  margin-top: 1px;
+  gap: 2.5px;
+  color: black;
+}
+
+.sort{
+  margin-top: 1px;
+  gap: 2.5px;
+}
+
+.column{
+  margin-top: 1px;
+  gap: 3px;
+}
+
+.last{
+  display: flex;
+  gap: 30px;
+}
+
+.bt {
+  background-color: black; 
+  margin-top: -8px;
+  color: white; 
+  font-size: 12px; 
+  font-weight: bold; 
+  border: none; 
+  border-radius: 8px; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  transition: all 0.3s ease; 
+}
+
+.header1{
+  display: flex;
+  gap: 50px;
+}
